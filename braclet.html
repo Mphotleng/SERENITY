@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SERENITY - Bracelets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Cinzel', serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: #006400;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ddd;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 3rem;
+      margin: 3rem 0 1rem;
+    }
+
+    .bracelet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem 4rem;
+    }
+
+    .bracelet-card {
+      background-color: #f9f9f9;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .bracelet-card:hover {
+      transform: scale(1.03);
+    }
+
+    .bracelet-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .bracelet-info {
+      padding: 1.5rem;
+    }
+
+    .bracelet-name {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .bracelet-description {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+      color: #333;
+    }
+
+    .add-to-cart {
+      background-color: #006400;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #004d00;
+    }
+
+    .cart {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f0f0f0;
+    }
+
+    .cart h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .cart-items {
+      list-style: none;
+      padding: 0;
+    }
+
+    .cart-items li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .remove-button {
+      background-color: #b22222;
+      color: white;
+      border: none;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .remove-button:hover {
+      background-color: #800000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SERENITY</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Collections</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <h1 class="section-title">Our Bracelet Collection</h1>
+
+  <section class="bracelet-grid">
+    <div class="bracelet-card">
+      <img src="de9bf77cd27c963c9eb7e864fbaf570198a616de1b2154b4485e0ef0_tmpyskk8ymk.jpg" alt="Gold Glow Bracelet">
+      <div class="bracelet-info">
+        <div class="bracelet-name">Gold Glow</div>
+        <div class="bracelet-description">Radiant gold strands interwoven with elegance.</div>
+        <div class="price">M2,800</div>
+        <button class="add-to-cart" data-name="Gold Glow" data-price="2800">Add to Cart</button>
+      </div>
+    </div>
+    <div class="bracelet-card">
+      <img src="5bfd34ff81aef92f70230b3da6d638696f1c8e919f651cce806eef0a_tmpeby7z06i.jpg" alt="Twilight Emerald Bracelet">
+      <div class="bracelet-info">
+        <div class="bracelet-name">Twilight Emerald</div>
+        <div class="bracelet-description">Deep green hues capturing twilight’s mystique.</div>
+        <div class="price">M3,100</div>
+        <button class="add-to-cart" data-name="Twilight Emerald" data-price="3100">Add to Cart</button>
+      </div>
+    </div>
+    <div class="bracelet-card">
+      <img src="eefbb4b89cf84c8587a4b2f3cce8dd95441f00ff33bc688d197acaf2_tmpfv41fi0c.jpg" alt="Diamond Spark Bracelet">
+      <div class="bracelet-info">
+        <div class="bracelet-name">Diamond Spark</div>
+        <div class="bracelet-description">Brilliant diamonds for a captivating wrist statement.</div>
+        <div class="price">M4,600</div>
+        <button class="add-to-cart" data-name="Diamond Spark" data-price="4600">Add to Cart</button>
+      </div>
+    </div>
+    <div class="bracelet-card">
+      <img src="e84c5cf776e941dd2bec4a0c5c2cdedbf5dbe97d5399667c612ad670_tmpyhxwac8f.jpg" alt="Rose Dream Bracelet">
+      <div class="bracelet-info">
+        <div class="bracelet-name">Rose Dream</div>
+        <div class="bracelet-description">Charming rose gold loops in dreamy harmony.</div>
+        <div class="price">M3,700</div>
+        <button class="add-to-cart" data-name="Rose Dream" data-price="3700">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="cart">
+    <h2>Your Cart</h2>
+    <ul class="cart-items" id="cart-items"></ul>
+    <p><strong>Total: </strong>M<span id="cart-total">0</span></p>
+  </div>
+
+  <script>
+    const cartItems = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    let total = 0;
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', () => {
+        const name = button.getAttribute('data-name');
+        const price = parseInt(button.getAttribute('data-price'));
+
+        const item = document.createElement('li');
+        item.innerHTML = `${name} - M${price} <button class="remove-button">Remove</button>`;
+
+        const removeBtn = item.querySelector('.remove-button');
+        removeBtn.addEventListener('click', () => {
+          item.remove();
+          total -= price;
+          cartTotal.textContent = total;
+        });
+
+        cartItems.appendChild(item);
+        total += price;
+        cartTotal.textContent = total;
+      });
+    });
+  </script>
+</body>
+</html>

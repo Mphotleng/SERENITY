@@ -1,0 +1,210 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SERENITY - Fine Jewellery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Cinzel', serif;
+      background: url('p_7c615764-1b13-11f0-bd65-00163e4778e8_wm.jpg') no-repeat center center/cover;
+      color: #333;
+    }
+
+    header {
+      background-color: #006400; /* Royal emerald green */
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-family: 'Cinzel', serif;
+      font-size: 3.5rem;
+      color: #fff;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ddd;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 0 1rem;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 1rem;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      color: #ddd;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 5rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.6rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta-button {
+      padding: 1rem 2.5rem;
+      font-family: 'Cinzel', serif;
+      font-size: 1.2rem;
+      background-color: #d4af37;
+      color: #fff;
+      border: none;
+      border-radius: 35px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #c39c34;
+      transform: scale(1.05);
+    }
+
+    .intro {
+      padding: 6rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      font-size: 1.3rem;
+      color: #555;
+    }
+
+    footer {
+      background-color: #fafafa;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #e5e5e5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SERENITY</div>
+    <nav>
+      <div class="dropdown">
+        <a href="collection.html" class="dropbtn">Collection</a>
+        <div class="dropdown-content">
+          <a href="necklace.html">Necklaces</a>
+          <a href="braclet.html">Bracelets</a>
+          <a href="earings.html">Earrings</a>
+          <a href="rings.html">Rings</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Timeless elegance</h1>
+      <p>Crafted with passion and precision — luxury that tells your story.</p>
+      <button class="cta-button">Explore Collections</button>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h2>Welcome to Serenity</h2>
+    <p>At Serenity, we celebrate the art of fine jewellery. Each piece is a harmonious blend of heritage, craftsmanship, and modern sophistication — designed to illuminate your beauty and mark life’s most precious moments.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 SERENITY. All rights reserved.
+  </footer>
+</body>
+</html>

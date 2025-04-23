@@ -1,0 +1,294 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SERENITY - Jewelry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Cinzel', serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: #006400;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ddd;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 3rem;
+      margin: 3rem 0 1rem;
+    }
+
+    .necklace-grid, .ring-grid, .earring-grid, .bracelet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem 4rem;
+    }
+
+    .necklace-card, .ring-card, .earring-card, .bracelet-card {
+      background-color: #f9f9f9;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .necklace-card:hover, .ring-card:hover, .earring-card:hover, .bracelet-card:hover {
+      transform: scale(1.03);
+    }
+
+    .necklace-card img, .ring-card img, .earring-card img, .bracelet-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .necklace-info, .ring-info, .earring-info, .bracelet-info {
+      padding: 1.5rem;
+    }
+
+    .necklace-name, .ring-name, .earring-name, .bracelet-name {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .necklace-description, .ring-description, .earring-description, .bracelet-description {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .price {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SERENITY</div>
+    <nav>
+      <a href="Serenity.html">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Collections</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <h1 class="section-title">Our Necklace Collection</h1>
+
+  <section class="necklace-grid">
+    <div class="necklace-card">
+      <img src="a-photograph-of-a-delicate-gold-neck-pie_o3gUnCPMTmW7yhbofJUXDg_K6J2go1jTbKJTZV4cAxEjg.jpg" alt="Golden Grace Necklace">
+      <div class="necklace-info">
+        <div class="necklace-name">Golden Grace</div>
+        <div class="necklace-description">An elegant gold piece radiating timeless sophistication.</div>
+      </div>
+    </div>
+
+    <div class="necklace-card">
+      <img src="emerald green.jpg" alt="Emerald Whisper Necklace">
+      <div class="necklace-info">
+        <div class="necklace-name">Emerald Whisper</div>
+        <div class="necklace-description">Capturing the lush serenity of the forest in a stunning emerald pendant.</div>
+      </div>
+    </div>
+
+    <div class="necklace-card">
+      <img src="floral.jpg" alt="Crystal Bloom Necklace">
+      <div class="necklace-info">
+        <div class="necklace-name">Crystal Bloom</div>
+        <div class="necklace-description">Floral inspiration meets crystal clarity in this dazzling creation.</div>
+      </div>
+    </div>
+
+    <div class="necklace-card">
+      <img src="g6b6OKMVQygWiw4dEn7z--0--4b5sq.jpg" alt="Pearl Embrace Necklace">
+      <div class="necklace-info">
+        <div class="necklace-name">Pearl Embrace</div>
+        <div class="necklace-description">Classic pearls nestled in modern luxury, perfect for graceful evenings.</div>
+      </div>
+    </div>
+
+    <div class="necklace-card">
+      <img src="chr2Qm68oKhR3Dx3bw0j--0--4030h.jpg" alt="Sapphire Moonlight Necklace">
+      <div class="necklace-info">
+        <div class="necklace-name">Sapphire Moonlight</div>
+        <div class="necklace-description">Deep blue sapphires shimmer like moonlight on still waters.</div>
+      </div>
+    </div>
+
+    <div class="necklace-card">
+      <img src="RS7sDC9m3vKY7F1Fe0Fa--0--noxjh.jpg" alt="Diamond Reverie Necklace">
+      <div class="necklace-info">
+        <div class="necklace-name">Diamond Reverie</div>
+        <div class="necklace-description">A sparkling daydream of diamonds designed to captivate.</div>
+      </div>
+    </div>
+  </section>
+
+  <h1 class="section-title">Our Ring Collection</h1>
+
+  <section class="ring-grid">
+    <div class="ring-card">
+      <img src="diamond.jpeg" alt="Elegance Ring">
+      <div class="ring-info">
+        <div class="ring-name">Elegance</div>
+        <div class="ring-description">A sparkling diamond nestled in platinum, the epitome of love.</div>
+      </div>
+    </div>
+    <div class="ring-card">
+      <img src="ruby (2).jpeg" alt="Regal Halo Ring">
+      <div class="ring-info">
+        <div class="ring-name">Regal Halo</div>
+        <div class="ring-description">An opulent halo of diamonds surrounding a royal ruby.</div>
+      </div>
+    </div>
+    <div class="ring-card">
+      <img src="ruby.jpeg" alt="Princess Rose Ring">
+      <div class="ring-info">
+        <div class="ring-name">Princess Rose</div>
+        <div class="ring-description">Rose gold elegance with a soft pink sapphire center.</div>
+      </div>
+    </div>
+    <div class="ring-card">
+      <img src="orange.jpeg" alt="Crown Light Ring">
+      <div class="ring-info">
+        <div class="ring-name">Crown Light</div>
+        <div class="ring-description">White gold and radiant topaz for modern royalty.</div>
+      </div>
+    </div>
+    <div class="ring-card">
+      <img src="loop.jpg" alt="Promise Eternelle Ring">
+      <div class="ring-info">
+        <div class="ring-name">Promise Eternelle</div>
+        <div class="ring-description">Infinity loop symbolizing eternal devotion in yellow gold.</div>
+      </div>
+    </div>
+    <div class="ring-card">
+      <img src="bond.jpg" alt="Starlight Bond Ring">
+      <div class="ring-info">
+        <div class="ring-name">Starlight Bond</div>
+        <div class="ring-description">A dazzling blend of diamonds celebrating shared destinies.</div>
+      </div>
+    </div>
+  </section>
+
+  <h1 class="section-title">Our Earring Collection</h1>
+
+  <section class="earring-grid">
+    <div class="earring-card">
+      <img src="A84S5QayCeJ528AxVZda--0--bgy7c.jpg" alt="Golden Drop Earrings">
+      <div class="earring-info">
+        <div class="earring-name">Golden Drop</div>
+        <div class="earring-description">Elegant golden drops perfect for any celebration.</div>
+            </div>
+    </div>
+    <div class="earring-card">
+      <img src="CWH2UFgG2Pepf8wJHHU4--0--pzddu.jpg" alt="Emerald Glow Earrings">
+      <div class="earring-info">
+        <div class="earring-name">Emerald Glow</div>
+        <div class="earring-description">Glimmering emeralds set in fine white gold.</div>
+             </div>
+    </div>
+    <div class="earring-card">
+      <img src="hQ5jipFw2oYxAqFjLOpQ--0--64izz.jpg" alt="Sapphire Tears Earrings">
+      <div class="earring-info">
+        <div class="earring-name">Sapphire Tears</div>
+        <div class="earring-description">Elegant sapphire drops evoking timeless grace.</div>
+             </div>
+    </div>
+    <div class="earring-card">
+      <img src="OsJN0vbWex7aUNfPcfdF--0--ti7xc.jpg" alt="Diamond Dust Earrings">
+      <div class="earring-info">
+        <div class="earring-name">Diamond Dust</div>
+        <div class="earring-description">Subtle diamond sparkles capturing every light.</div>
+              </div>
+    </div>
+    <div class="earring-card">
+      <img src="WP4fEtI2fa19fEtBSpVo--0--4x0cv.jpg" alt="Rose Twirl Earrings">
+      <div class="earring-info">
+        <div class="earring-name">Rose Twirl</div>
+        <div class="earring-description">Delicate rose gold twists for romantic evenings.</div>
+        
+      </div>
+    </div>
+    <div class="earring-card">
+      <img src="XnMvMiZVXfPTtRbqGa8U--0--2vf07.jpg" alt="Pearl Mist Earrings">
+      <div class="earring-info">
+        <div class="earring-name">Pearl Mist</div>
+        <div class="earring-description">Soft pearls with a shimmering misty finish.</div>
+       </div>
+    </div>
+    </div>
+  </section>
+
+  <h1 class="section-title">Our Bracelet Collection</h1>
+
+  <section class="bracelet-grid">
+    <div class="bracelet-card">
+      <img src="de9bf77cd27c963c9eb7e864fbaf570198a616de1b2154b4485e0ef0_tmpyskk8ymk.jpg" alt="Gold Glow Bracelet">
+      <div class="bracelet-info">
+        <div class="bracelet-name">Gold Glow</div>
+        <div class="bracelet-description">Radiant gold strands interwoven with elegance.</div>
+       </div>
+    </div>
+    <div class="bracelet-card">
+      <img src="5bfd34ff81aef92f70230b3da6d638696f1c8e919f651cce806eef0a_tmpeby7z06i.jpg" alt="Twilight Emerald Bracelet">
+      <div class="bracelet-info">
+        <div class="bracelet-name">Twilight Emerald</div>
+        <div class="bracelet-description">Deep green hues capturing twilight’s mystique.</div>
+             </div>
+    </div>
+    <div class="bracelet-card">
+      <img src="eefbb4b89cf84c8587a4b2f3cce8dd95441f00ff33bc688d197acaf2_tmpfv41fi0c.jpg" alt="Diamond Spark Bracelet">
+      <div class="bracelet-info">
+        <div class="bracelet-name">Diamond Spark</div>
+        <div class="bracelet-description">Brilliant diamonds for a captivating wrist statement.</div>
+             </div>
+    </div>
+    <div class="bracelet-card">
+      <img src="e84c5cf776e941dd2bec4a0c5c2cdedbf5dbe97d5399667c612ad670_tmpyhxwac8f.jpg" alt="Rose Dream Bracelet">
+      <div class="bracelet-info">
+        <div class="bracelet-name">Rose Dream</div>
+        <div class="bracelet-description">Charming rose gold loops in dreamy harmony.</div>
+       
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
